@@ -1,0 +1,8 @@
+.less-width {
+  max-width: 600px !important;
+}
+
+body {
+  background: linear-gradient(45deg, #9b59b6, #f1c40f);
+  min-height: 100vh;
+}

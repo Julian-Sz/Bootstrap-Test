@@ -12,147 +12,157 @@
   <title>Bootstrap Test Website</title>
 </head>
 
-<body class="text-center">
+<body class="text-center text-light">
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="../public/rakete.svg"
-            alt=""
-            width="30"
-            height="24"
-          />Bootstrap is awesome!</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#main-header"
-                >Go to the top of the site</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Some Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="A sample searchbar (not working)"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <div class="row" id="main-header">
-      <h1>This is a test website!</h1>
-      <h2>It uses Bootstrap!</h2>
-    </div>
-
-    <div class="accordion accordion-flush shadow" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-6" href="#"
+            ><img
+              src="../public/rakete.svg"
+              alt=""
+              width="30"
+              height="24"
+            />Learning Bootstrap</a
+          >
           <button
-            class="accordion-button bg-success text-light"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            This is an accordion!
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </h2>
-        <div
-          id="collapseOne"
-          class="accordion-collapse collapse show"
-          aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <strong>There is some content in here, isn't it?</strong>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#main-header"
+                  >Go to the top of the site</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Some Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="A searchbar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button
-            class="accordion-button collapsed bg-warning"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
+      </nav>
+    </div>
+
+    <div class="row" id="main-header">
+      <h1 class="text-dark mt-4">This is a test website,</h1>
+      <h2 class="text-dark mb-4">and it uses Bootstrap!</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div
+        class="accordion accordion-flush shadow less-width p-0 text-dark"
+        id="accordionExample"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button bg-success text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              This is an accordion!
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
           >
-            You can view different elements here!
-          </button>
-        </h2>
-        <div
-          id="collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">CONTENT!</div>
+            <div class="accordion-body">
+              <strong>There is good content in here, isn't it?</strong>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed bg-warning"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              You can view different elements here!
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
           >
-            Amazing, right?
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">You got it!</div>
+            <div class="accordion-body">CONTENT!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Amazing, right?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">You got it!</div>
+          </div>
         </div>
       </div>
     </div>
