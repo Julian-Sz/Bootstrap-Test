@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="../src/index.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Bootstrap Test Website</title>
+</head>
+
+<body class="text-center text-light">
+  <div class="container-fluid">
+    <div class="row mb-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-6" href="#"
+            ><img
+              src="../public/rakete.svg"
+              alt=""
+              width="30"
+              height="24"
+            />Learning Bootstrap</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <form class="nav-item d-flex justify-content-center">
+                <button
+                  class="btn btn-outline-primary"
+                  aria-current="page"
+                  href="#"
+                  id="go-to-top"
+                  onclick="topFunction()"
+                >
+                  <i class="bi bi-arrow-up-square-fill m"></i>Go to the top of
+                  the site
+                </button>
+              </form>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Some Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="A searchbar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row" id="main-header">
+      <h1 class="text-dark mt-4">This is a test website,</h1>
+      <h2 class="text-dark mb-4">and it uses Bootstrap!</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div
+        class="accordion accordion-flush shadow less-width p-0 text-dark"
+        id="accordionExample"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button bg-success text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              This is an accordion!
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>There is good content in here, isn't it?</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed bg-warning"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              You can view different elements here!
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">CONTENT!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Amazing, right?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">You got it!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-2">
+      <button
+        type="button"
+        class="btn btn-lg btn-info text-light mb-2"
+        data-bs-toggle="popover"
+        title="Popover title"
+        data-bs-content="And here's some amazing content."
+      >
+        Click here to toggle popover
+      </button>
+      <a
+        tabindex="0"
+        class="btn btn-lg btn-danger mb-2"
+        role="button"
+        data-bs-toggle="popover"
+        data-bs-trigger="focus"
+        title="Dismissible popover"
+        data-bs-content="This popover will disappear once you click something else!"
+        >Dismissible popover</a
+      >
+    </div>
+
+    <div class="row justify-content-center mb-3">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide less-width"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+        data-bs-pause="hover"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner shadow">
+          <div class="carousel-item active">
+            <div
+              class="carousel-overlay"
+              style="background-image: url(pic1.jpg)"
+            ></div>
+            <div class="container position-absolute bottom-0 mb-4 py-1">
+              <h5>This is a carousel!</h5>
+              <p>You can see some images here!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-overlay"
+              style="background-image: url(pic2.jpg)"
+            ></div>
+            <div class="container position-absolute bottom-0 mb-4 py-1">
+              <h5>Isn't this great?</h5>
+              <p>Carousels are amazing!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-overlay"
+              style="background-image: url(pic3.jpg)"
+            ></div>
+            <div class="container position-absolute bottom-0 mb-4 py-1">
+              <h5>You should</h5>
+              <p>try them out!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="carousel-overlay"
+              style="background-image: url(pic4.jpg)"
+            ></div>
+            <div class="container position-absolute bottom-0 mb-4 py-1">
+              <h5>They just keep spinnin'</h5>
+              <p>Forever...</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+</body>
