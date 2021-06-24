@@ -13,6 +13,59 @@
 
 <body class="text-center text-light">
   <div class="container-fluid">
+    <div
+      class="modal fade text-dark"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="alert alert-primary d-flex align-items-center"
+              role="alert"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+                viewBox="0 0 16 16"
+                role="img"
+                aria-label="Warning:"
+              >
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+              </svg>
+              <div>You opened a modal!</div>
+            </div>
+            This is how a modal looks like...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row mb-5">
       <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
         <div class="container-fluid">
@@ -50,7 +103,7 @@
                 </button>
               </form>
               <li class="nav-item">
-                <a class="nav-link" href="#">Some Link</a>
+                <a class="nav-link" href="https://github.com/Julian-Sz" target="_blank">A Link to my GitHub profile</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -61,14 +114,14 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  More Links
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="https://stackoverflow.com/users/14207819/dasjulian">My StackOverflow profile</a></li>
+                  <li><a class="dropdown-item" href="https://codepen.io/julian-sz">My CodePen.io profile</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/julian-szigethy-176536215/">My LinkedIn profile</a>
                   </li>
                 </ul>
               </li>
@@ -173,16 +226,16 @@
     <div class="my-2">
       <button
         type="button"
-        class="btn btn-lg btn-info text-light mb-2 text-dark"
+        class="btn btn-lg btn-success text-light mb-2"
         data-bs-toggle="popover"
         title="Popover title"
         data-bs-content="And here's some amazing content."
       >
-        Click here to toggle popover
+        Click here to toggle a popover
       </button>
       <a
         tabindex="0"
-        class="btn btn-lg btn-danger mb-2 text-dark"
+        class="btn btn-lg btn-danger mb-2"
         role="button"
         data-bs-toggle="popover"
         data-bs-trigger="focus"
@@ -190,6 +243,14 @@
         data-bs-content="This popover will disappear once you click something else!"
         >Dismissible popover</a
       >
+      <button
+        type="button"
+        class="btn btn-lg btn-primary mb-2"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Open a modal
+      </button>
     </div>
 
     <div class="row justify-content-center mb-3">
